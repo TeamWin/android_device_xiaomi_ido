@@ -28,6 +28,11 @@ TARGET_SCREEN_WIDTH := 720
 PRODUCT_PACKAGES += \
     charger_res_images
 
+# Kernel
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/recovery/kernel:kernel \
+    $(LOCAL_PATH)/recovery/dt.img:dt.img
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ido
 PRODUCT_NAME := full_ido
