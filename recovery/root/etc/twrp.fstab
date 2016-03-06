@@ -8,4 +8,5 @@
 /data         ext4   /dev/block/bootdevice/by-name/userdata
 /system       ext4   /dev/block/bootdevice/by-name/system
 
-/external_sd  vfat   /dev/block/mmcblk1p1 /dev/block/mmcblk1  flags=display="Micro SDcard";storage;wipeingui;removable
+/external_sd  vfat   /dev/block/mmcblk1p1   /dev/block/mmcblk1  flags=display="Micro SDcard";storage;wipeingui;removable
+/usbotg		  vfat   /dev/block/sda1	    /dev/block/sda		flags=display="USB OTG";storage;removable
